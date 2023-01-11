@@ -7,7 +7,7 @@ import skimage.io as io
 # ----------------------------
 
 # Functions:
-def segment_image_kmeans(img, k=3, attempts=10): 
+def segment_image_kmeans(img, k=5, attempts=10): 
 
     # Convert MxNx3 image into Kx3 where K=MxN
     pixel_values  = img.reshape((-1,3))  #-1 reshape means, in this case MxN
@@ -44,9 +44,9 @@ output = st.container()
 with header:
     st.title("To Eat, Or Not To Eat?")
     st.subheader("Low-Computing-Power Banana Ripening Calculator")
-    st.text("This project was built as a part of \"Intro To Image Processing\"\ncourse in the Faculty of Agriculture.\nIt's quite simple:\n")
-    st.text("*  Upload an image of a banana to the \"Input Image\" section.")
-    st.text("*  The ripeness status of the banana will be presented in the \"Calculated Status\" section.")
+    st.write("This project was built as a part of \"Intro To Image Processing\"\ncourse in the Faculty of Agriculture.\nIt's quite simple:\n")
+    st.write("*  Upload an image of a banana to the \"Input Image\" section.")
+    st.write("*  The ripeness status of the banana will be presented in the \"Calculated Status\" section.")
 
 with input:
     st.header("Input Image:")
