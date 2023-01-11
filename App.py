@@ -7,7 +7,7 @@ import skimage.io as io
 # ----------------------------
 # Page Configuration:
 
-st.set_page_config(page_title="Is My Banana Ripe?")
+st.set_page_config(page_title="Is My Banana Ripe?",page_icon="🍌",layout="wide")
 # ----------------------------
 
 # Functions:
