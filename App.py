@@ -45,7 +45,7 @@ with header:
     st.title("To Eat, Or Not To Eat?")
     st.subheader("Low-Computing-Power Banana Ripening Calculator")
     st.write("This project was built as a part of \"Intro To Image Processing\"\ncourse in the Faculty of Agriculture.\nIt's quite simple:\n")
-    st.write("*  Upload an image of a banana to the \"Input Image\" section.")
+    st.write("*  Upload an image of a [banana](https://en.wikipedia.org/wiki/Banana) to the \"Input Image\" section.")
     st.write("*  The ripeness status of the banana will be presented in the \"Calculated Status\" section.")
 
 with input:
