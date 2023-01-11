@@ -5,6 +5,10 @@ import numpy as np
 import skimage.io as io
 
 # ----------------------------
+# Page Configuration:
+
+st.set_page_config(page_title="Is My Banana Ripe?")
+# ----------------------------
 
 # Functions:
 def segment_image_kmeans(img, k=5, attempts=10): 
