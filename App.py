@@ -42,10 +42,10 @@ input = st.container()
 output = st.container()
 
 with header:
-    st.title("Area Calculating Using AruCo Markers")
-    st.text("This small project was built as a part of \"Intro To Image Processing\"\ncourse in the Faculty of Agriculture.\nIt's quite simple:\n")
-    st.text("*  Upload an image containing an object and an AruCo marker to the\n \"Input Image\" section.")
-    st.text("*  The area of the object will be presented in the \"Calculated Area\" section.")
+    st.title("To Eat, Or Not To Eat?\nLow-Computing-Power Banana Ripening Calculator")
+    st.text("This project was built as a part of \"Intro To Image Processing\"\ncourse in the Faculty of Agriculture.\nIt's quite simple:\n")
+    st.text("*  Upload an image of a banana to the\n \"Input Image\" section.")
+    st.text("*  The ripeness status of the banana will be presented in the \"Calculated Status\" section.")
 
 with input:
     st.header("Input Values:")
