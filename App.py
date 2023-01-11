@@ -65,7 +65,7 @@ with input:
     if loaded_image is not None:
         image = io.imread(loaded_image)
     else:
-        st.markdown(f'<h1 style="color:red;font-size:24px;">{"you must upload an image..."}</h1>', unsafe_allow_html=True)
+        st.markdown(f'<h1 style="color:red;font-size:24px;">{"uploading an image is required"}</h1>', unsafe_allow_html=True)
 
 
 with output:
