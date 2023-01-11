@@ -9,7 +9,14 @@ import skimage.io as io
 
 st.set_page_config(page_title="Is My Banana Ripe?",page_icon=":banana:",layout="wide")
 # ----------------------------
+# Banana Ripeness Color Scheme:
 
+UNRIPE = np.array([[143, 169, 65]])
+SEMI_RIPE = np.array([[213, 209, 122]])
+RIPE = np.array([[244, 219, 100]])
+HALF_ROTTEN = np.array([[234, 171, 64]])
+ROTTEN = np.array([[46, 37, 34]])
+# ----------------------------
 # Functions:
 def segment_image_kmeans(img, k=5, attempts=10): 
 
@@ -54,9 +61,11 @@ with header:
 
 with input:
     st.header("Input Image:")
-
-    sel_col = st.container()
-    disp_col = st.container()
+    loaded_image= st.file_uploader("Upload an image of a banana:", type=['jpg', 'jpeg', 'png'])
+    if loaded_image is not None:
+        image = io.imread(loaded_image)
+    else:
+        st.markdown(f'<h1 style="color:red;font-size:24px;">{"you must upload an image..."}</h1>', unsafe_allow_html=True)
 
 
 with output:
