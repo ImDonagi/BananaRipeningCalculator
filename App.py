@@ -2,7 +2,8 @@
 import streamlit as st
 import cv2
 import numpy as np
-import skimage.io as io
+#import skimage.io as io
+from PIL import Image
 
 # ----------------------------
 # Page Configuration:
@@ -63,7 +64,8 @@ with input:
     st.header("Input Image:")
     loaded_image= st.file_uploader("Upload an image of a banana:", type=['jpg', 'jpeg', 'png'])
     if loaded_image is not None:
-        image = io.imread(loaded_image)
+        image = Image.open(loaded_image)
+        st.image(image, caption='Uploaded banana')
     else:
         st.markdown(f'<h1 style="color:red;font-size:24px;">{"Uploading an image is required"}</h1>', unsafe_allow_html=True)
 
