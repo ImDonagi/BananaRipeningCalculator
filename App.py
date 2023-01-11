@@ -49,11 +49,11 @@ with header:
     st.text("*  The ripeness status of the banana will be presented in the \"Calculated Status\" section.")
 
 with input:
-    st.header("Input Values:")
+    st.header("Input Image:")
 
     sel_col = st.container()
     disp_col = st.container()
 
 
 with output:
-    st.header("Calculated Area:")
+    st.header("Calculated Status:")
