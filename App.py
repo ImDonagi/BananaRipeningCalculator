@@ -158,8 +158,6 @@ ripeness_status = df2[df2['desired_product']==nearest].index[0]
 
 with output:
     st.header(f"Calculated Status: {ripeness_status}")
-    st.image(image, caption='Uploaded banana')
-    
     # plot ripeness percentage
     st.bar_chart(df2['percentage'])
     plt.title('Ripeness Percentage of the Banana')
