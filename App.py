@@ -55,7 +55,7 @@ G_ROTTEN = np.array([39])
 # steps 1+2: reading the banana image and removing the background using rembg
 
 output = remove(image) # remove background
-output.save(output_path) # save image
+#output.save(output_path) # save image
 
 # -------------------------------------------------------------------------------------
 # step 3: pre-process the image before segmentation
