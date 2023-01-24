@@ -1,4 +1,7 @@
-streamlit
-scikit-image
-opencv-contrib-python-headless
+pandas
+opencv-python
 numpy
+scikit-image
+matplotlib
+rembg
+Pillow
