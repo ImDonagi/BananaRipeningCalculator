@@ -153,11 +153,13 @@ nearest = closest(df2['desired_product'].tolist(), real_product_avg)
 # finding the ripeness status
 ripeness_status = df2[df2['desired_product']==nearest].index[0]
 
+dddd = df2.loc[df2['percentage'].idxmax()]
+
 # -------------------------------------------------------------------------------------
 # Output:
 
 with output:
-    st.header(f"Calculated Status: {ripeness_status}")
+    st.header(f"Calculated Status: {dddd}")
     # plot ripeness percentage
     st.bar_chart(df2['percentage'])
     plt.title('Ripeness Percentage of the Banana')
